@@ -1,38 +1,46 @@
-# Community_Board
-Submitted by: **Sai Rithwik Kukunuri**
+Here’s the README file for your **Flashcard Web App** in the same format as the example you provided:
 
-For this **Community Board**, I have created an resources of user manual for various programming langauges. The board should have a unique purpose, such as links to help users learn more about software engineering. On each card of your community board, I have displayed some information about the resource.
+---
 
-Time spent: **2** hours spent in total
+# Flashcard Web App  
+Submitted by: **[Your Name]**
 
-You can view the project live here: community-board-alpha.vercel.app
+For this **Flashcard Web App** project, I have created an interactive system where users can study, learn, or play a guessing game using flashcards. The app displays flashcards in a random order and allows users to flip cards to view either the question or the answer. Users can click through the cards, making learning fun and engaging.
+
+Time spent: **[Time Spent]** hours spent in total
+
+You can view the project live here: **[Your Link]**
 
 ## Required Features
 
-The following functionality **goals** have been completed.
+The following functionality **goals** have been completed:
 
-- [x] Initialize a new React application with Vite.
-- [x] Create a functional React component.
-- [x] Define and pass props to components.
-- [x] Apply CSS styling to React components.
+- [x] Initialize a new React application.
+- [x] Create functional React components for the flashcard system.
+- [x] Define and store card pairs (question/answer) in an array.
+- [x] Implement functionality to flip cards between their question and answer.
+- [x] Add a "Next" button to display a new random card.
+- [x] Display the title, description, and total number of cards in the set.
+- [x] Style the cards and components using CSS.
 
-The following **required features** features are implemented:
+The following **required features** are implemented:
 
-- [x] Create a unique theme for events or resources relevant to a specific community.
-- [x] Display at least 10 unique resources or events in a responsive card format.
+- [x] Display one card at a time, showing either the question or answer.
+- [x] Clicking on the card reveals the answer.
+- [x] Clicking the "Next" button shows a random new card.
+- [x] Display the card set's title, description, and total number of cards.
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
+Here's a walkthrough of the implemented features:
 
-![via GIPHY](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm91MHNoY20zeWQ5eWw3YWV1eDVpd2EwNmxieHlncmd4ODBtM3o4aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9cMUUYFQRw7Xx9cwkL/giphy.gif)
+![via GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm91MHNoY20zeWQ5eWw3YWV1eDVpd2EwNmxieHlncmd4ODBtM3o4aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9cMUUYFQRw7Xx9cwkL/giphy.gif)
 
 GIF created with GIPHY
 
-
 ## Notes
 
-The community board includes a user manual for all programming languages, built with React and JavaScript. Challenges included correctly defining props, avoiding duplicate elements, formatting numbers, and sorting events with precise logic. These issues were solved with testing and small adjustments.
+The Flashcard Web App allows users to study using flashcards that display a question or an answer. Key challenges in this project included managing the card flipping logic, randomizing the order of the cards, and ensuring smooth transitions between the cards. The app now offers an engaging and interactive study tool for users to explore.
 
 ## License
 
