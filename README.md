@@ -1,15 +1,9 @@
-Here’s the README file for your **Flashcard Web App** in the same format as the example you provided:
-
----
-
 # Flashcard Web App  
-Submitted by: **[Your Name]**
+Submitted by: **[Sai Rithwik K]**
 
 For this **Flashcard Web App** project, I have created an interactive system where users can study, learn, or play a guessing game using flashcards. The app displays flashcards in a random order and allows users to flip cards to view either the question or the answer. Users can click through the cards, making learning fun and engaging.
 
-Time spent: **[Time Spent]** hours spent in total
-
-You can view the project live here: **[Your Link]**
+Time spent: **[2]** hours spent in total
 
 ## Required Features
 
