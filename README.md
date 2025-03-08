@@ -28,7 +28,7 @@ The following **required features** are implemented:
 
 Here's a walkthrough of the implemented features:
 
-![via GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm91MHNoY20zeWQ5eWw3YWV1eDVpd2EwNmxieHlncmd4ODBtM3o4aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9cMUUYFQRw7Xx9cwkL/giphy.gif)
+![via GIPHY]([https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm91MHNoY20zeWQ5eWw3YWV1eDVpd2EwNmxieHlncmd4ODBtM3o4aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9cMUUYFQRw7Xx9cwkL/giphy.gif](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjg2a3I0MTQ3c3g2b3h6bmhmb2dqa3RzMTJidm9vcG8zdjM0ZXZlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NIKXvsGipqmrkbAJ7M/giphy.gif)
 
 GIF created with GIPHY
 
