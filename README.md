@@ -34,7 +34,7 @@ GIF created with GIPHY
 
 ## Notes
 
-The Flashcard Web App allows users to study using flashcards that display a question or an answer. Key challenges in this project included managing the card flipping logic, randomizing the order of the cards, and ensuring smooth transitions between the cards. The app now offers an engaging and interactive study tool for users to explore.
+The Flashcard Web App allows users to study using flashcards that display a question or an answer. Key challenges in this project included managing the card flipping logic, randomizing the order of the cards, and ensuring smooth transitions between the cards. The app now offers an interactive study tool for users to explore.
 
 ## License
 
