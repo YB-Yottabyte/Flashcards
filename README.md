@@ -1,5 +1,5 @@
 # Flashcard Web App  
-Submitted by: **[Sai Rithwik K]**
+Submitted by: **Sai Rithwik Kukunuri**
 
 For this **Flashcard Web App** project, I have created an interactive system where users can study, learn, or play a guessing game using flashcards. The app displays flashcards in a random order and allows users to flip cards to view either the question or the answer. Users can click through the cards, making learning fun and engaging.
 
