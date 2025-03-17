@@ -9,26 +9,17 @@ Time spent: **[2]** hours spent in total
 
 The following functionality **goals** have been completed:
 
-- [x] Initialize a new React application.
-- [x] Create functional React components for the flashcard system.
-- [x] Define and store card pairs (question/answer) in an array.
-- [x] Implement functionality to flip cards between their question and answer.
-- [x] Add a "Next" button to display a new random card.
-- [x] Display the title, description, and total number of cards in the set.
-- [x] Style the cards and components using CSS.
-
-The following **required features** are implemented:
-
-- [x] Display one card at a time, showing either the question or answer.
-- [x] Clicking on the card reveals the answer.
-- [x] Clicking the "Next" button shows a random new card.
-- [x] Display the card set's title, description, and total number of cards.
+- [x] User Input.
+- [x] The user can enter their guess in a box before seeing the flipside of the card.
+- [x] Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect.
+- [x] A back button displayed on the card can be used to return to the previous card in a set sequence
+- [x] A next button displayed on the card can be used to navigate to the next card in a set sequence
 
 ## Video Walkthrough
 
 Here's a walkthrough of the implemented features:
 
-![via GIPHY](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjg2a3I0MTQ3c3g2b3h6bmhmb2dqa3RzMTJidm9vcG8zdjM0ZXZlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NIKXvsGipqmrkbAJ7M/giphy.gif)
+![via GIPHY](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzc2MjNnbDBodWx1N3dsY3d4eTY2M2x3ZmdmOTdrbmNnanh6OGd0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/H6m04iCi3ranUbkJfj/giphy.gif)
 
 GIF created with GIPHY
 
