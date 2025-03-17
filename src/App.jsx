@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Flashcard from "./components/flashcards";
 import "./App.css";
 
@@ -19,25 +19,56 @@ const flashcards = [
 function App() {
   const [index, setIndex] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [userGuess, setUserGuess] = useState("");
+  const [feedback, setFeedback] = useState("");
 
   const nextCard = () => {
     setShowAnswer(false);
-    setIndex(Math.floor(Math.random() * flashcards.length));
+    setUserGuess("");
+    setFeedback("");
+    setIndex((prevIndex) => (prevIndex + 1) % flashcards.length);
+  };
+
+  const previousCard = () => {
+    setShowAnswer(false);
+    setUserGuess("");
+    setFeedback("");
+    setIndex((prevIndex) => (prevIndex - 1 + flashcards.length) % flashcards.length);
+  };
+
+  const submitAnswer = () => {
+    setShowAnswer(true);
+    if (userGuess.trim().toLowerCase() === flashcards[index].answer.toLowerCase()) {
+      setFeedback("correct");
+    } else {
+      setFeedback("incorrect");
+    }
   };
 
   return (
     <div className="app-container">
       <h1>Flashcard App</h1>
       <p>Total Cards: {flashcards.length}</p>
+
       <Flashcard
         question={flashcards[index].question}
         answer={flashcards[index].answer}
         showAnswer={showAnswer}
         setShowAnswer={setShowAnswer}
+        userGuess={userGuess}
+        setUserGuess={setUserGuess}
+        feedback={feedback}
       />
-      <button className="next-button" onClick={nextCard}>
-        Next Card
-      </button>
+
+      <div className="button-container">
+        <button className="previous-button" onClick={previousCard}>Previous Card</button>
+        <button className="next-button" onClick={nextCard}>Next Card</button>
+      </div>
+      {showAnswer && (
+        <div className="feedback-section">
+          <button className="submit-button" onClick={submitAnswer}>Submit Answer</button>
+        </div>
+      )}
     </div>
   );
 }
