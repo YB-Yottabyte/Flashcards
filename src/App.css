@@ -1,89 +1,119 @@
-/* App.css */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full screen height */
-  background: #f0f4f8; /* Light background color */
-  color: #333; /* Dark text for contrast */
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 15px;
-  font-size: 2rem; /* Smaller heading size */
-  font-weight: 400;
-}
 
 .flashcard {
-  width: 200px; /* Significantly reduced size */
-  height: 120px; /* Significantly reduced height */
-  perspective: 1000px; /* 3D effect for the flip */
+  width: 400px;
+  height: 250px;
+  perspective: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; /* Smaller gap between card and button */
+  margin-bottom: 30px;
+  position: relative; /* Allow absolute positioning of input over it */
 }
 
 .flashcard-inner {
   width: 100%;
   height: 100%;
   transition: transform 0.6s ease-in-out;
-  transform-style: preserve-3d; /* Enable 3D space */
+  transform-style: preserve-3d;
   cursor: pointer;
 }
 
 .flashcard.flip .flashcard-inner {
-  transform: rotateY(180deg); /* Flip the card */
+  transform: rotateY(180deg);
 }
 
 .flashcard-front,
 .flashcard-back {
   position: absolute;
-  backface-visibility: hidden; /* Hide the back when flipped */
+  backface-visibility: hidden;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem; /* Reduced text size */
+  font-size: 1.5rem;
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 12px;
 }
 
 .flashcard-front {
-  background: #ffffff; /* White background for front */
-  color: #333333; /* Dark text for contrast */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: #ffffff;
+  color: #333333;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .flashcard-back {
-  background: #ff9f00; /* Soft orange color for the back */
+  background: #ff9f00;
   color: white;
-  transform: rotateY(180deg); /* Initially flip the back */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: rotateY(180deg);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-.next-button {
-  padding: 12px 25px;
+/* Styling for user input section */
+.user-input-section {
+  bottom: 10px; /* Adjust to make input appear below the card content */
+  width: 100%;
+  flex-direction: column;
+  z-index: 2; /* Make sure input section is above the card */
+  margin-inline-end: 100%;
+  margin-bottom: 100px;
+}
+
+
+.user-input-section input {
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 80%;
+  max-width: 320px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-right: 100%;
+}
+
+.user-input-section button {
+  padding: 12px 30px;
   border: none;
-  background: #007bff; 
+  background: #007bff;
   color: white;
-  font-size: 1rem;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
-  display: inline-block;
+}
+
+.user-input-section button:hover {
+  background: #0056b3;
+}
+
+/* Styling for feedback message */
+.feedback-section {
+  position: absolute;
+  bottom: 60px; /* Positioned above the input */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3; /* Ensure feedback appears above the card */
+}
+
+.feedback {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 60%;
+
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
 }
 
 .next-button:hover {
